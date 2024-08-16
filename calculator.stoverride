@@ -11,7 +11,7 @@ http:
     - match: ^https?:\/\/www\.40sishi\.com\/(list|currency|calculator)\/user\/profile$
       name: jisuanqiHD1
       type: response
-      require-body: false
+      require-body: true
       timeout: 10
 script-providers:
   jisuanqiHD1:
