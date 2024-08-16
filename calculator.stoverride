@@ -1,0 +1,19 @@
+#!desc=计算器HD解锁会员
+#!homepage=https://whatshub.top
+#!author=yqc007
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/calculator.png
+name: jisuanqiHD
+desc: 计算器HD解锁会员
+http:
+  mitm:
+    - "www.40sishi.com"
+  script:
+    - match: ^https?:\/\/www\.40sishi\.com\/(list|currency|calculator)\/user\/profile$
+      name: jisuanqiHD1
+      type: response
+      require-body: false
+      timeout: 10
+script-providers:
+  jisuanqiHD1:
+    url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/CalculatorHDProCrack.js
+    interval: 86400
